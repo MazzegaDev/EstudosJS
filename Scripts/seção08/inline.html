@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onclick="MudarCor()">
+    <button onclick="MostrarAlerta()" type="button">Clique aqui</button>
+
+    <br>
+    <span onmouseover="MudarTexto(this);" class="info"><b>Atenção</b>Não clique no botão acima!</span>
+    <br><br/>
+
+    <input onkeyup="escrever(this)">
+
+    <br><br>
+    <span id="texto"></span>
+    <script src="js/EventosInline.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 04 - Aula 12</title>
+</head>
+<body>
+    <h1>Seção 04 - Aula 12</h1>
+    
+    <script>
+        /*Variaveis  declaradas (como VAR) dentro de funções são variaveis LOCAIS, e não seram reconhecida fora deste escopo, variaveis declaradas fora de funções são variaveis GLOBAIS, seram reconhecidas em todo o programa*/
+
+        /*Variaveis declaradas como LET sempre seram variaveis locais*/
+
+        /*Sempre que possivel usar LET */
+        function somar(num1, num2){
+            // variavel local!! (So é reconhecida dentro do bloco da função)
+            var valor = 5;
+            return valor + num1 + num2;
+            
+        }
+
+        console.log(somar(4, 6));
+
+        for(var i =0; i < 5; i++){
+            var otr = 5;
+            console.log(i * otr);
+        }
+
+        //console.log(valor); = ReferenceError
+
+        console.log(otr); // temos acesso pois foi declarada em um bloco for
+        console.log(i);
+
+        for(var j = 0; j < 5; j++){
+            let uma = 12; // Let é uma variavel local
+            console.log(j * uma);
+        }
+
+        //console.log(uma);// reference erros variavel LOCAL
+        console.log(j);
+    </script>
+</body>
+</html>

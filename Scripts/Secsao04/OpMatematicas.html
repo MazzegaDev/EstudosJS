@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção 04 - Aula 04</title>
+</head>
+<body>
+    <h1>Seção 04 - Aula 04</h1>
+    
+        <script>
+            var num1 = 42 , num2 = 19, res, nome = 'Geek';
+            //var num2 = 23;
+
+            console.log(num1,num2, nome);
+
+            //soma
+            res = num1 + num2;
+            console.log(`Sua soma ${res}`);
+            console.log(nome);
+
+            //Cuidado! - Dica Geek
+            var num3 = '39';
+            res = num1 + num3;
+            console.log(res)// = 4239, apenas concatenou
+
+            res = num1 - num2;
+            console.log(res);                                                               
+            
+            // Modulo %, resto da divisao
+            res = num1 % 2;
+            console.log(res)
+            // Incremento / Decremento
+            // num1 = num1 + 8
+            // console.log(num1)
+
+            num1 +=8// -=8  +=8  *=8  /=8
+            console.log(num1++) // = 51, imprime e depois incrementa 50, 51
+            console.log(num1--) // = 50, imprime e depois decrementa 51, 50
+
+            console.log(++num1) // = 51, incrementa e depois imprime 
+            console.log(--num1) // = 50, decrementa e depois imprime
+
+            var outro = 10
+            console.log(outro);
+            console.log('Imprime primeiro ' + outro++)
+            console.log('Depois incrementa ' + outro)
+            // Ambos valem para --
+            var sla = 5;
+            console.log(sla);
+            console.log('Incrementa, depois imprime ' + ++sla)
+
+        </script>
+</body>
+</html>
